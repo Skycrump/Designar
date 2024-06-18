@@ -735,7 +735,7 @@ Transform:
   m_GameObject: {fileID: 541207610}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.186, z: -2.729}
+  m_LocalPosition: {x: 0, y: 0.19, z: -5.31}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -911,7 +911,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1493811888}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 180
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
@@ -1118,12 +1118,12 @@ PrefabInstance:
     - target: {fileID: 2448627743154041619, guid: aa463f60280d79840a67d0d221e91219,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.3678278
+      value: -0.44
       objectReference: {fileID: 0}
     - target: {fileID: 2448627743154041619, guid: aa463f60280d79840a67d0d221e91219,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.3455181
+      value: -0.42
       objectReference: {fileID: 0}
     - target: {fileID: 2448627743154041619, guid: aa463f60280d79840a67d0d221e91219,
         type: 3}
@@ -1165,10 +1165,60 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2532400271421140295, guid: aa463f60280d79840a67d0d221e91219,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.1907715
+      objectReference: {fileID: 0}
+    - target: {fileID: 2532400271421140295, guid: aa463f60280d79840a67d0d221e91219,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3232170225890898227, guid: aa463f60280d79840a67d0d221e91219,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 3232170225890898227, guid: aa463f60280d79840a67d0d221e91219,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4232512023674885172, guid: aa463f60280d79840a67d0d221e91219,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.5241829
+      objectReference: {fileID: 0}
+    - target: {fileID: 4232512023674885172, guid: aa463f60280d79840a67d0d221e91219,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7509591218578194889, guid: aa463f60280d79840a67d0d221e91219,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.1588732
+      objectReference: {fileID: 0}
+    - target: {fileID: 7509591218578194889, guid: aa463f60280d79840a67d0d221e91219,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7731915868545374232, guid: aa463f60280d79840a67d0d221e91219,
         type: 3}
       propertyPath: m_Name
       value: furniture set
+      objectReference: {fileID: 0}
+    - target: {fileID: 9214460583512758721, guid: aa463f60280d79840a67d0d221e91219,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.5192286
+      objectReference: {fileID: 0}
+    - target: {fileID: 9214460583512758721, guid: aa463f60280d79840a67d0d221e91219,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
