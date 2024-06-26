@@ -254,7 +254,7 @@ GameObject:
   - component: {fileID: 398673512}
   - component: {fileID: 398673511}
   - component: {fileID: 398673510}
-  - component: {fileID: 398673509}
+  - component: {fileID: 398673513}
   m_Layer: 0
   m_Name: ImageTarget2
   m_TagString: Untagged
@@ -262,25 +262,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &398673509
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 398673508}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 398673511}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: old-wood-texture_1122-767
-  mDatasetName: 
-  mCastedBehaviour: {fileID: 398673511}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &398673510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -293,38 +274,6 @@ MonoBehaviour:
   m_Script: {fileID: 1009902125}
   m_Name: 
   m_EditorClassIdentifier: 
-  StatusFilter: 1
-  UsePoseSmoothing: 0
-  AnimationCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 3.3333333
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 0.3
-      value: 1
-      inSlope: 3.3333333
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  OnTargetFound:
-    m_PersistentCalls:
-      m_Calls: []
-  OnTargetLost:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &398673511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -340,18 +289,18 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: old-wood-texture_1122-767
+  mTrackableName: rock
   mInitializedInEditor: 1
-  mDataSetPath: 
-  mAspectRatio: 0.6661342
-  mImageTargetType: 3
+  mDataSetPath: Vuforia/MDC.xml
+  mAspectRatio: 0.65999997
+  mImageTargetType: 0
   mWidth: 0.2
-  mHeight: 0.13322684
-  mRuntimeTexture: {fileID: 2800000, guid: 8bb07a267a8d2d04db85115dae1e316f, type: 3}
+  mHeight: 0.132
+  mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 398673509}
+  mPreview: {fileID: 398673513}
 --- !u!4 &398673512
 Transform:
   m_ObjectHideFlags: 0
@@ -361,12 +310,32 @@ Transform:
   m_GameObject: {fileID: 398673508}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.81, y: 0, z: 0}
+  m_LocalPosition: {x: 1.194, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1416160933}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &398673513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 398673508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 398673511}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: rock
+  mDatasetName: Vuforia/MDC.xml
+  mCastedBehaviour: {fileID: 398673511}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &669791658
 GameObject:
   m_ObjectHideFlags: 0
@@ -378,7 +347,7 @@ GameObject:
   - component: {fileID: 669791662}
   - component: {fileID: 669791661}
   - component: {fileID: 669791660}
-  - component: {fileID: 669791659}
+  - component: {fileID: 669791663}
   m_Layer: 0
   m_Name: ImageTarget1
   m_TagString: Untagged
@@ -386,25 +355,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &669791659
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 669791658}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 669791661}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: 1.rock-texture
-  mDatasetName: Vuforia/VuforiaMars_Images.xml
-  mCastedBehaviour: {fileID: 669791661}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &669791660
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -417,38 +367,6 @@ MonoBehaviour:
   m_Script: {fileID: 1009902125}
   m_Name: 
   m_EditorClassIdentifier: 
-  StatusFilter: 1
-  UsePoseSmoothing: 0
-  AnimationCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 3.3333333
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 0.3
-      value: 1
-      inSlope: 3.3333333
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  OnTargetFound:
-    m_PersistentCalls:
-      m_Calls: []
-  OnTargetLost:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &669791661
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -464,18 +382,18 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: 1.rock-texture
+  mTrackableName: wood
   mInitializedInEditor: 1
-  mDataSetPath: Vuforia/VuforiaMars_Images.xml
-  mAspectRatio: 0.65999997
-  mImageTargetType: 3
+  mDataSetPath: Vuforia/MDC.xml
+  mAspectRatio: 0.666135
+  mImageTargetType: 0
   mWidth: 0.2
-  mHeight: 0.132
-  mRuntimeTexture: {fileID: 2800000, guid: 3cfbc81490126634b9c7e7388e399bd7, type: 3}
+  mHeight: 0.133227
+  mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 669791659}
+  mPreview: {fileID: 669791663}
 --- !u!4 &669791662
 Transform:
   m_ObjectHideFlags: 0
@@ -485,12 +403,32 @@ Transform:
   m_GameObject: {fileID: 669791658}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.287, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2110040042}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &669791663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 669791658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 669791661}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: wood
+  mDatasetName: Vuforia/MDC.xml
+  mCastedBehaviour: {fileID: 669791661}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!115 &1009902125
 MonoScript:
   m_ObjectHideFlags: 0
@@ -604,12 +542,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1416160929}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.837, y: 0.09217613, z: -0.042}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.05, y: 0.058, z: -0.018}
   m_LocalScale: {x: 0.07399746, y: 0.07399746, z: 0.07399746}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 398673512}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1727427657
 GameObject:
@@ -827,12 +765,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2110040038}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.009094252, y: 0.038, z: 0.009}
   m_LocalScale: {x: 0.085266, y: 0.085266, z: 0.085266}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 669791662}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
@@ -841,6 +779,4 @@ SceneRoots:
   - {fileID: 1727427660}
   - {fileID: 304752165}
   - {fileID: 669791662}
-  - {fileID: 2110040042}
   - {fileID: 398673512}
-  - {fileID: 1416160933}
