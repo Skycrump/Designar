@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using TMPro;
 
 public class Z_Text : MonoBehaviour
 {
@@ -10,10 +11,18 @@ public class Z_Text : MonoBehaviour
     Vector3 position_difference, pos_temp, size_temp;
     float C, B;
 
+    private TextMeshPro textMeshPro;
+
+
     // Use this for initialization
     void Start()
     {
-
+        textMeshPro = GetComponent<TextMeshPro>();
+        if (textMeshPro == null)
+        {
+            Debug.LogError("TextMeshPro component not found on " + gameObject.name);
+            return;
+        }
     }
 
     // Update is called once per frame
@@ -25,7 +34,9 @@ public class Z_Text : MonoBehaviour
         position2 = GamePose2.GetComponent<Pose2>().pos2;
 
         float distance = position2.z - position1.z;
-        GetComponent<TextMesh>().text = distance.ToString("f1");
+        //GetComponent<TextMesh>().text = distance.ToString("f1");
+        textMeshPro.text = distance.ToString("f1");
+
         pos_temp = LenthZ.GetComponent<LinkPoseZ>().position1;
         pos_temp.z = pos_temp.z + distance / 2;
         transform.position = pos_temp;
