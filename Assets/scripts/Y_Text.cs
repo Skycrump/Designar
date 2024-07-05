@@ -16,7 +16,12 @@ public class Y_Text : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
+        textMeshPro = GetComponent<TextMeshPro>();
+        if (textMeshPro == null)
+        {
+            Debug.LogError("TextMeshPro component not found on " + gameObject.name);
+            return;
+        }
     }
 
     // Update is called once per frame
