@@ -21,11 +21,11 @@ public class Y_Text : MonoBehaviour
     {
         position_difference = transform.position;
         pos_temp = transform.position;
-        position1 = GamePose1.GetComponent<Pose>().pos;
-        position2 = GamePose2.GetComponent<Pose2>().pos2;
+        position1 = GamePose1.GetComponent<Pose>().pos; //GET COMPONENT FROM THE CUBE 1 
+        position2 = GamePose2.GetComponent<Pose2>().pos2; // GET COMPONENT FROM CUBE 2 
 
-        float distance = position1.y - position2.y;
-        GetComponent<TextMesh>().text = distance.ToString("f1");
+        float distance = position1.y - position2.y; 
+        GetComponent<TextMesh>().text = distance.ToString("f1"); 
         pos_temp = LenthY.GetComponent<LinkPoseY>().pos_tempY;
         pos_temp = position2;
        // pos_temp.y = Mathf.Abs((position2.y - position1.y) / 2);
