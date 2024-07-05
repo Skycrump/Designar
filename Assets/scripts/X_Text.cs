@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using TMPro;
 
 public class X_Text : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class X_Text : MonoBehaviour
     public Vector3 position2, position1;
     Vector3 position_difference, pos_temp, size_temp;
     float C, B;
+
+    private TextMeshPro textMeshPro;
 
     // Use this for initialization
     void Start()
@@ -26,7 +29,9 @@ public class X_Text : MonoBehaviour
 
         float distance = position2.x - position1.x;
         //distance = Mathf.RoundToInt(distance);
-        GetComponent<TextMesh>().text = distance.ToString("f1");
+        //GetComponent<TextMesh>().text = distance.ToString("f1");
+        textMeshPro.text = distance.ToString("f1");
+
 
         pos_temp = LenthX.GetComponent<LinkPoseX>().pos_tempX;
         pos_temp.x = pos_temp.x + distance/2;
