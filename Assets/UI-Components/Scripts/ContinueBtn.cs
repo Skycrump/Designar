@@ -11,4 +11,14 @@ public class ContinueBtn : MonoBehaviour
         SceneManager.LoadScene("MainPage");
     }
 
+    public void BackToMainPageUI()
+    {
+        SceneManager.LoadScene("MainPage");
+    }
+
+    public void LoadSingleSofaScene()
+    {
+        SceneManager.LoadScene("Single sofa");
+    }
+
 }
