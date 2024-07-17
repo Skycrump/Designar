@@ -21,4 +21,9 @@ public class ContinueBtn : MonoBehaviour
         SceneManager.LoadScene("Single sofa");
     }
 
+    public void LoadRular()
+    {
+        SceneManager.LoadScene("RulAR");
+    }
+
 }
